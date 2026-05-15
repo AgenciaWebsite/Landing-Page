@@ -1500,18 +1500,22 @@ input:checked+.slider:before {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, .8);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   z-index: 2000;
   padding: 20px;
   opacity: 0;
   visibility: hidden;
+  display: none;
   transition: opacity .3s ease, visibility .3s ease
 }
 
 .service-popup-overlay.active {
+  display: flex;
   opacity: 1;
-  visibility: visible
+  visibility: visible;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center
 }
 
 .service-popup {
