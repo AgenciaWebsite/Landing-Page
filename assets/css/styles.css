@@ -1317,32 +1317,32 @@ input:checked+.slider:before {
 /* FLOATING BUTTONS */
 .whatsapp-float {
   position: fixed;
-  bottom: 28px;
-  right: 28px;
-  width: 64px;
-  height: 64px;
-  background: #33d325;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
   border-radius: 50%;
-  z-index: 999;
-  box-shadow: 0 4px 20px rgba(66, 223, 26, .692);
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, .4);
   transition: var(--transition)
 }
 
 .whatsapp-float:hover {
   transform: translateY(-4px) scale(1.08);
-  box-shadow: 0 6px 30px rgba(211, 37, 37, .671)
+  box-shadow: 0 6px 30px rgba(37, 211, 102, .6)
 }
 
 .floating-red-btn {
   position: fixed;
-  bottom: 104px;
-  right: 35px;
+  bottom: 102px;
+  right: 30px;
   width: 50px;
   height: 50px;
   background: var(--gradient-red);
   border: none;
   border-radius: 50%;
-  z-index: 999;
+  z-index: 100;
   cursor: pointer;
   box-shadow: 0 6px 30px rgba(229, 26, 44, .5);
   transition: all .4s cubic-bezier(.25, .46, .45, .94);
@@ -1376,6 +1376,27 @@ input:checked+.slider:before {
 
   50% {
     box-shadow: 0 8px 40px rgba(229, 26, 44, .75), 0 0 60px rgba(229, 26, 44, .2)
+  }
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .whatsapp-float svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .floating-red-btn {
+    width: 40px;
+    height: 40px;
+    bottom: 80px;
+    right: 20px;
   }
 }
 
